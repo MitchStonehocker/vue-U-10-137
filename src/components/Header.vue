@@ -1,0 +1,23 @@
+<template>
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Qutoes Added</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="30"
+          :style="{ width: ( quoteCount / maxQuotes ) * 100 + '%' }">
+          {{ quoteCount }} of {{ maxQuotes }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ['quoteCount', 'maxQuotes']
+}
+</script>
+
+<style scoped>
+
+</style>
